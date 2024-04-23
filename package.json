@@ -1,15 +1,15 @@
 {
-	"name": "git-last-commit-message",
-	"displayName": "Git Last Commit Message (GLCM)",
-	"description": "Pre fills with last commit message",
-	"version": "1.9.0",
-	"publisher": "JanBn",
+	"name": "git-last-commit-message-fork",
+	"displayName": "Git Last Commit Message (GLCM) fork",
+	"description": "Fixed version of \"(GLCM) Choose commit message\" not working when there is only one repository",
+	"version": "1.9.1",
+	"publisher": "blono",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/JanBN/vscode-git-last-commit-message"
+		"url": "https://github.com/blono/vscode-git-last-commit-message"
 	},
 	"engines": {
-		"vscode": "^1.1.30"
+		"vscode": "^1.1.37"
 	},
 	"categories": [
 		"Other"
@@ -100,7 +100,7 @@
 		"ts-loader": "^4.4.2",
 		"tslint": "^5.8.0",
 		"typescript": "^3.3.3333",
-		"vscode": "^1.1.30",
+		"vscode": "^1.1.37",
 		"webpack": "^4.19.1",
 		"webpack-cli": "^3.1.0"
 	},
