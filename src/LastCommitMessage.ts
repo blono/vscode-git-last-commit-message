@@ -36,8 +36,16 @@ export class LastCommitMessage {
         }
     }
 
+    private chooseRepository() {
+        if (this._gitAPI.repositories.length == 1) {
+            return this._gitAPI.repositories[0];
+        } else {
+            return this._gitAPI.repositories.find(x => x.ui.selected);
+        }
+    }
+
     async chooseLastCommitMessage() {
-        const selectedRep = this._gitAPI.repositories.find(x => x.ui.selected);
+        const selectedRep = this.chooseRepository();
         if (selectedRep != null) {
 
 
